@@ -501,7 +501,7 @@ jobs:
           COV_EXIT_CODE=$?
           cat COV_REPORT
           if [ $COV_EXIT_CODE -ne 0 ]; then
-            echo "🚨 Coverage failed. Under 100" | tee -a $GITHUB_STEP_SUMMARY
+            echo "馃毃 Coverage failed. Under 100" | tee -a $GITHUB_STEP_SUMMARY
           fi
           echo '```' >> $GITHUB_STEP_SUMMARY
           cat COV_REPORT >> $GITHUB_STEP_SUMMARY
